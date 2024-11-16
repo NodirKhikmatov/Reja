@@ -1,0 +1,36 @@
+{
+  "name": "John",
+  "profession": "Software Engineer",
+  "age": 20,
+  "residence": "S.Korea",
+  "address": "s.Korea,Jeonju",
+  "languages": ["uzbek", "Korean", "English"],
+  "skills": ["Html", "Css", "Js", "NodeJs", "English"],
+  "extra skills": [
+    "bootstrap",
+    "Materialize",
+    "styling",
+    "Sass",
+    "Django",
+    "Flask",
+    "GIT Knowledge"
+  ],
+  "work place": "IT company",
+  "Service_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+  "about me": "Lorem ipsum dolor sit amng elit, sed do eiusmim veniam",
+  "City": "Denau",
+  "title": ["Flower", "Seedlings", "Gardner", "Old", "New"],
+  "flower_desc": ["what is Flower", "what is Seedlings", "what is Gardner"],
+  "flower_name": [
+    "Tulip",
+    "Daffodil",
+    "Poppy",
+    "sunFLower",
+    "Rose",
+    "cherry",
+    "blossom"
+  ],
+  "flower_price": ["14$", "24$", "17$", "30$", "42$", "9$", "22$"],
+  "famous_word": ["world is beautifull with Flowers"],
+  "famous_name": ["Steve Jobs"]
+}
