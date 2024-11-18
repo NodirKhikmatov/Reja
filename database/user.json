@@ -3,10 +3,11 @@
   "profession": "Software Engineer",
   "age": 20,
   "residence": "S.Korea",
-  "address": "s.Korea,Jeonju",
+  "Freelance": "Available",
+  "address": "S.Korea,Jeonju",
   "languages": ["uzbek", "Korean", "English"],
   "skills": ["Html", "Css", "Js", "NodeJs", "English"],
-  "extra skills": [
+  "extra_skills": [
     "bootstrap",
     "Materialize",
     "styling",
@@ -16,7 +17,7 @@
     "GIT Knowledge"
   ],
   "work place": "IT company",
-  "Service_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+  "Service_desc": "Lorem ipsum dolor sit amet, incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
   "about me": "Lorem ipsum dolor sit amng elit, sed do eiusmim veniam",
   "City": "Denau",
   "title": ["Flower", "Seedlings", "Gardner", "Old", "New"],
