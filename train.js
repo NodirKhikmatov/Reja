@@ -11,32 +11,32 @@ const list = [
 
 //Callback
 
-// function maslahatBering(a, callback) {
-//   if (typeof a !== "number") callback("insert a number", null);
-//   else if (a <= 20) callback(null, list[0]);
-//   else if (a <= 20 && a <= 30) callback(null, list[1]);
-//   else if (a <= 30 && a <= 40) callback(null, list[2]);
-//   else if (a <= 40 && a <= 50) callback(null, list[3]);
-//   else if (a <= 50 && a <= 60) callback(null, list[4]);
-//   else {
-//     // setTimeout(() => {
-//     //   callback(null, list[5]);
-//     // }, 5000);
+function maslahatBering(a, callback) {
+  if (typeof a !== "number") callback("insert a number", null);
+  else if (a <= 20) callback(null, list[0]);
+  else if (a <= 20 && a <= 30) callback(null, list[1]);
+  else if (a <= 30 && a <= 40) callback(null, list[2]);
+  else if (a <= 40 && a <= 50) callback(null, list[3]);
+  else if (a <= 50 && a <= 60) callback(null, list[4]);
+  else {
+    // setTimeout(() => {
+    //   callback(null, list[5]);
+    // }, 5000);
 
-//     setInterval(() => {
-//       callback(null, list[5]);
-//     }, 1000);
-//   }
-// }
+    setInterval(() => {
+      callback(null, list[5]);
+    }, 1000);
+  }
+}
 
 // console.log("passed her 0");
-// maslahatBering(55, (err, data) => {
-//   if (err) console.log("Error", err);
-//   else {
-//     console.log("javob", data);
-//   }
-// });
-// console.log("passed here 1");
+maslahatBering(55, (err, data) => {
+  if (err) console.log("Error", err);
+  else {
+    console.log("javob", data);
+  }
+});
+console.log("passed here 1");
 
 //async function ========
 
@@ -131,3 +131,4 @@ async function maslahatBering(a) {
 //     console.log("ANY LOGIC");
 //   }
 // });
+
