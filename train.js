@@ -1,4 +1,4 @@
-console.log("Jack Ma maslahatlari");
+// console.log("Jack Ma maslahatlari");
 
 const list = [
   "yaxshi talaba bo'ling", //0-20
@@ -48,10 +48,10 @@ async function maslahatBering(a) {
   else if (a <= 40 && a <= 50) return list[3];
   else if (a <= 50 && a <= 60) return list[4];
   else {
-    return list[5];
-    setTimeout(() => {
-      callback(null, list[5]);
-    }, 5000);
+    // return list[5];
+    // setTimeout(() => {
+    //   callback(null, list[5]);
+    // }, 5000);
 
     return new Promise((resolve, reject) => {
       setTimeout(() => {
@@ -59,9 +59,9 @@ async function maslahatBering(a) {
       }, 5000);
       //===========
 
-      //       setInterval(() => {
-      //         resolve([list5]);
-      //       }, 4000);
+      setInterval(() => {
+        resolve([list5]);
+      }, 4000);
     });
   }
 }
@@ -81,15 +81,15 @@ async function maslahatBering(a) {
 
 // call via asyn/await
 
-async function run() {
-  let javob = await maslahatBering(21);
-  console.log(javob);
-  javob = await maslahatBering(31);
-  console.log(javob);
-  javob = await maslahatBering(41);
-  console.log(javob);
-}
-run();
+// async function run() {
+//   let javob = await maslahatBering(21);
+//   console.log(javob);
+//   javob = await maslahatBering(31);
+//   console.log(javob);
+//   javob = await maslahatBering(41);
+//   console.log(javob);
+// }
+// run();
 
 //MIT TASK
 
@@ -110,3 +110,24 @@ run();
 
 // let result = mitTask("o", "hello");
 // console.log(`The letter appears ${result} times.`);
+
+// DEFINE
+// function qoldiqBolish(a, b, cb) {
+//   if (a === 0) {
+//     cb("Mahraj nolga teng bolmasin!", null, "ishlamaydi");
+//   } else {
+//     const c = a % b;
+//     cb(null, c, "ishladi");
+//   }
+// }
+
+// // CALL
+// qoldiqBolish(6, -1, (err, data, data2) => {
+//   if (err) {
+//     console.log("ERROR:", err);
+//   } else {
+//     console.log("data:", data);
+//     console.log("data2:", data2);
+//     console.log("ANY LOGIC");
+//   }
+// });
