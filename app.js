@@ -46,6 +46,8 @@ app.get("/author", function (req, res) {
 });
 
 app.get("/", function (req, res) {
+  console.log("user entered /create-item");
+
   db.collection("plans")
     .find()
     .toArray((err, data) => {
@@ -54,7 +56,7 @@ app.get("/", function (req, res) {
         res.end("something went wrong");
       } else {
         console.log(data);
-        res.render("reja");
+        res.render("reja", { items: data });
       }
     });
 });
