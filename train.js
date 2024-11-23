@@ -140,6 +140,6 @@ function countNumber(inputString) {
   return digits ? digits.length : 0;
 }
 
-const input = "Hello123World456!";
+const input = "Hello123MIT456!";
 const numberCount = countNumber(input);
 console.log(`The string contains ${numberCount} numbers.`);
