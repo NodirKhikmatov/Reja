@@ -3,8 +3,7 @@ const http = require("http");
 const mongodb = require("mongodb");
 let db;
 const connectString =
-  "mongodb+srv://nodirhikmatov6:ZKqAGkKXBb6VBWaB@nodir.backw.mongodb.net/reja";
-
+  "mongodb+srv://nodirhikmatov6:ZKqAGkKXBb6VBWaB@nodir.backw.mongodb.net/reja?retryWrites=true&w=majority";
 mongodb.connect(
   connectString,
   {
@@ -17,6 +16,7 @@ mongodb.connect(
       console.log("mongodb connection succeed");
       // console.log(client);
       module.exports = client;
+
       const app = require("./app");
       const server = http.createServer(app);
       let PORT = 3000;
