@@ -134,12 +134,12 @@
 
 //mit task 2
 
-function countNumber(inputString) {
-  const digits = inputString.match(/\d/g);
+function findNumber(inputstring) {
+  const digits = inputstring.match(/\d/g);
 
   return digits ? digits.length : 0;
 }
 
-const input = "Hello123MIT456!";
-const numberCount = countNumber(input);
-console.log(`The string contains ${numberCount} numbers.`);
+const input = "hello234MIT621";
+const findInput = findNumber(input);
+console.log(`here has ${findInput} numbers`);
