@@ -134,12 +134,40 @@
 
 //mit task 2
 
-function findNumber(inputstring) {
-  const digits = inputstring.match(/\d/g);
+// function findNumber(inputstring) {
+//   const digits = inputstring.match(/\d/g);
 
-  return digits ? digits.length : 0;
+//   return digits ? digits.length : 0;
+// }
+
+// const input = "hello234MIT621";
+// const findInput = findNumber(input);
+// console.log(`here has ${findInput} numbers`);
+
+class Shop {
+  constructor(amount, product, price) {
+    this.amount = amount;
+    this.product = product;
+    this.price = price;
+  }
+  receive() {
+    console.log(
+      `today we received ${this.amount} ${this.product}  and the amount was about ${this.price} krw `
+    );
+  }
+
+  sell() {
+    console.log(`today I sold ${this.amount}  ${this.product} `);
+  }
+  qoldiq() {
+    console.log(`now left ${this.amount}  ${this.product}`);
+  }
 }
 
-const input = "hello234MIT621";
-const findInput = findNumber(input);
-console.log(`here has ${findInput} numbers`);
+const shop = new Shop(30, "breads", 100000);
+const shop1 = new Shop(22, "breads");
+const shop2 = new Shop(8, "breads");
+
+shop.receive();
+shop1.sell();
+shop2.qoldiq();
