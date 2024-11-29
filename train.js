@@ -144,30 +144,41 @@
 // const findInput = findNumber(input);
 // console.log(`here has ${findInput} numbers`);
 
-class Shop {
-  constructor(amount, product, price) {
-    this.amount = amount;
-    this.product = product;
-    this.price = price;
-  }
-  receive() {
-    console.log(
-      `today we received ${this.amount} ${this.product}  and the amount was about ${this.price} krw `
-    );
-  }
+//MIT TASK
+// class Shop {
+//   constructor(amount, product, price) {
+//     this.amount = amount;
+//     this.product = product;
+//     this.price = price;
+//   }
+//   receive() {
+//     console.log(
+//       `today we received ${this.amount} ${this.product}  and the amount was about ${this.price} krw `
+//     );
+//   }
 
-  sell() {
-    console.log(`today I sold ${this.amount}  ${this.product} `);
-  }
-  qoldiq() {
-    console.log(`now left ${this.amount}  ${this.product}`);
-  }
-}
+//   sell() {
+//     console.log(`today I sold ${this.amount}  ${this.product} `);
+//   }
+//   qoldiq() {
+//     console.log(`now left ${this.amount}  ${this.product}`);
+//   }
+// }
 
-const shop = new Shop(30, "breads", 100000);
-const shop1 = new Shop(22, "breads");
-const shop2 = new Shop(8, "breads");
+// const shop = new Shop(30, "breads", 100000);
+// const shop1 = new Shop(22, "breads");
+// const shop2 = new Shop(8, "breads");
 
-shop.receive();
-shop1.sell();
-shop2.qoldiq();
+// shop.receive();
+// shop1.sell();
+// shop2.qoldiq();
+
+const checkWord = (input1, input2) => {
+  let checkInput1 = input1.split("").sort().join("");
+  let checkInput2 = input2.split("").sort().join("");
+
+  return checkInput1 === checkInput2;
+};
+
+console.log(checkWord("mitgroup", "gmtiprou"));
+console.log(checkWord("hello", "world"));
