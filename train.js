@@ -1,5 +1,15 @@
 // console.log("Jack Ma maslahatlari");
 
+const checkWord = (input1, input2) => {
+  let checkInput1 = input1.split("").sort().join("");
+  let checkInput2 = input2.split("").sort().join("");
+
+  return checkInput1 === checkInput2;
+};
+
+console.log(checkWord("mitgroup", "gmtiprou"));
+console.log(checkWord("hello", "world"));
+
 // const list = [
 //   "yaxshi talaba bo'ling", //0-20
 //   "to'gri boshliq tanlang va ko'proq hato qiling", //20-30
@@ -172,13 +182,3 @@
 // shop.receive();
 // shop1.sell();
 // shop2.qoldiq();
-
-const checkWord = (input1, input2) => {
-  let checkInput1 = input1.split("").sort().join("");
-  let checkInput2 = input2.split("").sort().join("");
-
-  return checkInput1 === checkInput2;
-};
-
-console.log(checkWord("mitgroup", "gmtiprou"));
-console.log(checkWord("hello", "world"));
