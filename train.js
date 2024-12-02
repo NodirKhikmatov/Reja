@@ -1,14 +1,33 @@
 // console.log("Jack Ma maslahatlari");
 
-const checkWord = (input1, input2) => {
-  let checkInput1 = input1.split("").sort().join("");
-  let checkInput2 = input2.split("").sort().join("");
+// E TASK
 
-  return checkInput1 === checkInput2;
+const getReverse = (reversed) => {
+  let originReverse = reversed.split("").reverse().join("");
+  return originReverse;
 };
+console.log(getReverse("helloMIT"));
 
-console.log(checkWord("mitgroup", "gmtiprou"));
-console.log(checkWord("hello", "world"));
+
+
+
+
+
+
+
+
+
+//D task
+// const checkWord = (input1, input2) => {
+//   let checkInput1 = input1.split("").sort().join("");
+//   let checkInput2 = input2.split("").sort().join("");
+
+//   return checkInput1 === checkInput2;
+// };
+
+// console.log(checkWord("mitgroup", "gmtiprou"));
+
+// console.log(checkWord("hello", "world"));
 
 // const list = [
 //   "yaxshi talaba bo'ling", //0-20
