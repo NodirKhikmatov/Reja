@@ -2,20 +2,14 @@
 
 // E TASK
 
+// Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
+// MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
+
 const getReverse = (reversed) => {
   let originReverse = reversed.split("").reverse().join("");
   return originReverse;
 };
 console.log(getReverse("helloMIT"));
-
-
-
-
-
-
-
-
-
 
 //D task
 // const checkWord = (input1, input2) => {
