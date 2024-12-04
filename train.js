@@ -1,7 +1,30 @@
 // console.log("Jack Ma maslahatlari");
 
-// E TASK
+// TASK F
+// Yagona string argumentga ega findDoublers nomli function tuzing
+// Agar stringda bittadan ortiq bir xil harflar ishtirok etgan bo'lsa
+// true yokida false natija qaytarsin.
 
+// MASALAN: findDoublers("hello"); natija true qaytadi. Sababi ikki marotaba takrorlangan 'll' harfi mavjud!
+
+function findDoublers(string) {
+  let charCount = {};
+
+  for (let result of string) {
+    if (charCount[result]) {
+      return true;
+    }
+    charCount[result] = 1;
+  }
+  return false;
+}
+
+console.log(findDoublers("hello")); // true
+console.log(findDoublers("world")); // false
+console.log(findDoublers("apple")); // true
+console.log(findDoublers("bella")); // true
+
+// E TASK
 // Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
 // MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
 
